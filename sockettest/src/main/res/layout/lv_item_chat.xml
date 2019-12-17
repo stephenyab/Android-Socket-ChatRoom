@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:id="@+id/linTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutLeft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageLeft"
+            android:layout_width="@dimen/size_image"
+            android:layout_height="@dimen/size_image" />
+
+        <TextView
+            android:id="@+id/tvNameLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/imageLeft"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/tvMessageLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNameLeft"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/imageLeft"
+            android:background="@drawable/rc_ic_bubble_no_left"
+            android:text="@string/hello_world" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageRight"
+            android:layout_width="@dimen/size_image"
+            android:layout_height="@dimen/size_image"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="0dp"
+            android:layoutDirection="rtl" />
+
+        <TextView
+            android:id="@+id/tvNameRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@+id/imageRight"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/tvMessageRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNameRight"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageRight"
+            android:background="@drawable/rc_ic_bubble_no_right"
+            android:text="@string/hello_world" />
+    </RelativeLayout>
+
+</RelativeLayout>

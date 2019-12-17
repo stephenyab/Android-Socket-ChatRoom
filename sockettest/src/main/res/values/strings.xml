@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SocketTest</string>
+    <string name="ip_name">请输入ip地址</string>
+    <string name="port_name">请输入端口号</string>
+    <string name="connect_name">提交</string>
+    <string name="send">发送</string>
+    <string name="input_account">输入用户名</string>
+    <string name="input_password">输入密码</string>
+    <string name="input_password_repeat">再次输入密码</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="hello_world">hello world！</string>
+    <string name="name">姓名</string>
+    <string name="chat_name">聊天室</string>
+</resources>
